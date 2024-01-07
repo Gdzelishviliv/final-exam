@@ -104,3 +104,15 @@ body{
     margin-bottom: 45px;
     cursor: pointer;
 }
+.day-mode {
+    background: gray;
+    background: url(./photos/day-theme-icn.svg); 
+    background-repeat: no-repeat;
+    width: 84px;
+    height: 38px;
+}
+
+.day-night-btn:focus-within{
+    background: url(./photos/day-theme-icn.svg);
+    background-repeat: no-repeat;
+}
