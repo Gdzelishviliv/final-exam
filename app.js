@@ -3,5 +3,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     dayNightBtn.addEventListener('click', function () {
         document.body.classList.toggle('day-mode');
+        dayNightBtn.classList.toggle('active');
     });
 });
