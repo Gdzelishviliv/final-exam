@@ -9,7 +9,7 @@ body{
     display: grid;
     grid-template-columns:-0.5fr repeat(4, 1fr);
     grid-template-rows: 1fr 0.1fr 1fr;
-    gap: 84px 30px;
+    gap: 0px 30px;
 }
   
 .header { grid-area: 1 / 1 / 4 / 2; } 
@@ -115,7 +115,8 @@ body{
     
 }
 .today{
-    padding: 56px 15px 57px 22px;
+    height: 460px;
+    padding-inline: 30px;
     border-radius: 34px;
     background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
     backdrop-filter: blur(14px);
@@ -201,7 +202,9 @@ a{
     margin-bottom: 10px;
 }
 .highlights{
+    height: 460px;
     display: grid;
+    justify-content: center;
     grid-template-columns: 260px 260px 260px;
     gap: 20px;
     border-radius: 34px;
@@ -334,4 +337,19 @@ h3{
 .humidity-prt2{
     width: 109px;
     
+}
+.advertising{
+    border-radius: 34px;
+    background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(14px);
+}
+.advertising{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-inline: 30px;
+}
+.advertising img {
+    max-width: 100%;
+    height: auto;
 }
