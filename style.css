@@ -207,9 +207,7 @@ a{
     border-radius: 34px;
     background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
     backdrop-filter: blur(14px);
-    height: 540px;
     padding: 69px 30px 20px 30px;
-    justify-content: space-evenly;
 }
 #higlights-header{
     color: #FFF;
@@ -295,4 +293,45 @@ p{
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0.48px;
+}
+.humidity{
+    background: rgba(0, 0, 0, 0.30);
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    height: 101px;
+}
+.num-of-humidity{
+    display: flex;
+    align-items: baseline;
+}
+h3{
+    color: #FFF;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    margin: 0px;
+    margin-top: 10px;
+}
+#paragraph-form-highlights{
+    color: #FFFFFF99;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.36px;
+}
+#name-undermoon{
+    color:#FFFFFFCC;
+    font-size: 14px;
+    font-weight: 400;
+    
+}
+#prcnt{
+    font-size: 16px;
+    color: #FFFFFF99;
+}
+.humidity-prt2{
+    width: 109px;
+    
 }
