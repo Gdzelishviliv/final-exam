@@ -353,3 +353,39 @@ h3{
     max-width: 100%;
     height: auto;
 }
+.forecast{
+    border-radius: 34px;
+    background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
+    backdrop-filter: blur(14px);
+    padding: 40px 5px;
+}
+.amindi{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #FFFFFF66;
+    font-size: 14px;
+    letter-spacing: -0.14px;
+    font-weight: 400;
+}
+.amindi>div{
+    display: flex;
+    align-items: center;
+}
+.amindi h4{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 0.9px;
+}
+#temperature-slash{
+    font-size: 26px;
+    letter-spacing: 0.78px;
+    font-weight: 400;
+}
+.forecast>div{
+    display: grid;
+    gap: 25px;
+    overflow: auto;
+}
