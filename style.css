@@ -3,7 +3,7 @@
 }
 body{
     margin: 25px;
-    background: #121212;
+    background: radial-gradient(344.65% 167.74% at 0% 0%, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0.00) 100%);
 }
 .grid-container {
     display: grid;
@@ -106,7 +106,8 @@ body{
     cursor: pointer;
 }
 .day-mode {
-    background: gray;    
+    border-radius: 281px;
+    background: radial-gradient(50% 20% at 10% 30%, rgba(233,78,119,0.70) 0%,rgba(233,78,119,0.00) 100%);
 }
 
 .day-night-btn.active{
@@ -384,8 +385,33 @@ h3{
     letter-spacing: 0.78px;
     font-weight: 400;
 }
-.forecast>div{
+.forecast-first-child{
     display: grid;
     gap: 25px;
-    overflow: auto;
+    overflow-y: scroll;
+}
+.forecast-popup{
+    display: flex;
+    justify-content: space-between;
+    padding-block: 17px;
+    padding-inline: 30px;
+    border-radius: 18px;
+    background: linear-gradient(275deg, rgba(21, 23, 26, 0.30) 60.04%, rgba(67, 69, 71, 0.29) 69.38%, rgba(116, 117, 119, 0.28) 83.13%, rgba(255, 255, 255, 0.24) 107.2%, rgba(21, 23, 26, 0.30) 111.12%);
+}
+.forecast-popup>div{
+    display: grid;
+    gap: 5px;
+}
+.forecast-popup>div span{
+    color: #FFFFFFB2;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.42px;
+}
+h4{
+    margin: 0;
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: -0.3px;
+    color: #FFF;
 }
