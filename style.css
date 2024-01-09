@@ -17,7 +17,6 @@ body{
 .highlights { grid-area: 1 / 3 / 2 / 6; }
 .forecast { grid-area: 3 / 2 / 4 / 3; }
 .advertising { grid-area: 3 / 3 / 4 / 6; }
-
 .header{
     display: grid;
     align-content: space-between;
@@ -203,7 +202,8 @@ a{
 .location{
     margin-bottom: 10px;
 }
-.highlights{
+.highlights,
+.highlights-1{
     height: 460px;
     display: grid;
     justify-content: center;
@@ -478,7 +478,10 @@ h4{
     border-left: 6px solid black;
     background: linear-gradient(92deg, #000 -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
 }
-@media screen and (max-width: 1200px) {
+.highlights-1{
+    display: none;
+}
+@media screen and (max-width: 1475px) {
     .grid-container{
         display:inherit;
     }
@@ -495,12 +498,20 @@ h4{
         display: none;
     }
     .highlights{
+        display: none;
+        height: auto;
+        grid-template-columns: auto auto;
+        background: none;
+    }
+    .highlights-1{
+        display: grid;
         height: auto;
         grid-template-columns: auto auto;
         background: none;
     }
     .humidity{
-        height: auto;
+        height: 178px;
+        width: 184px;
     }
     #higlights-header{
         display: none;
@@ -508,5 +519,17 @@ h4{
     .forecast-tag{
         position: static;
         padding-inline: 24px;
+    }
+    body{
+        margin: 0;
+        padding-inline: 25px;
+    }
+    .uv-index{
+        height: 178px;
+        width: 184px;
+    }
+    .sunrise{
+        height: 178px;
+        width: 184px;
     }
 }
