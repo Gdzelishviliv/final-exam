@@ -481,7 +481,10 @@ h4{
 .highlights-1{
     display: none;
 }
-@media screen and (max-width: 1475px) {
+#mobile-after-img{
+    display: none;
+}
+@media screen and (max-width: 1495px) {
     .grid-container{
         display:inherit;
     }
@@ -531,5 +534,76 @@ h4{
     .sunrise{
         height: 178px;
         width: 184px;
+    }
+    .uv{
+       font-size: 25px;
+       letter-spacing: 0.25px; 
+    }
+    #uv{
+        font-size: 14px;
+        letter-spacing: 0.42px;
+    }
+    .uv-index p, .sunrise p{
+        padding-top: 13px;
+        font-size: 12px;
+        letter-spacing: 0.36px;
+    }
+    .sunrise-hours{
+        padding-bottom: 13px;
+    }
+    .sunrise-hours>div{
+        padding-inline: 12px;
+    }
+    .humidity{
+        display: grid;
+    }
+    h3{
+        font-size: 50px;
+    }
+    .humidity-prt2{
+        display: flex;
+        gap:15px;    
+    }
+    .amindi{
+        padding-inline: 25px;
+        justify-content: space-between;
+    }
+    .forecast-popup{
+        display: none;
+    }
+    .today-second-part{
+        display: none;
+    }
+    .today-img-div{
+        border: 0px;
+        display: grid;
+        gap: 13px;
+        justify-items: center;
+    }
+    #mobile-after-img{
+        display: inherit;
+        font-size: 40px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        color: #FFF;
+    }
+    .today-img-mobile{
+        display: flex;
+        align-items: center;
+    }
+    .today-img-mobile img{
+        width: 48px;
+    }
+    .today-temp{
+        display: grid;
+        justify-items: center;
+    }
+    .today-temp h2{
+        font-size: 80px;
+        letter-spacing: 1.6px;
+    }
+    .today-temp p{
+        font-size: 14px;
+        width: 168px;
     }
 }
