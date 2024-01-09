@@ -389,6 +389,7 @@ h3{
     display: grid;
     gap: 25px;
     overflow-y: scroll;
+    height: 250px;
 }
 .forecast-popup{
     display: flex;
@@ -414,4 +415,16 @@ h4{
     font-weight: 400;
     letter-spacing: -0.3px;
     color: #FFF;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
