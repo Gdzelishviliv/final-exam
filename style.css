@@ -30,6 +30,7 @@ body{
 }
 .header-part-1{
     display: grid;
+    gap: 45px;
 }
 .header-part-2{
     display: grid;
@@ -41,36 +42,36 @@ body{
     padding-bottom: 11px;
 }
 .main-page{
-    background: url(./photos/main-page-icn.svg);
-    background-repeat: no-repeat;
-    height: 32px;
-    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
     margin: auto;
-    margin-top: 45px;
 }
 .zodiac-page{
-    background: url(./photos/horoscop-page-icn.svg);
-    background-repeat: no-repeat;
-    height: 32px;
-    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
     margin: auto;
-    margin-top: 45px;
 }
 .mobile-page{
-    background: url(./photos/mobileshape-icn.svg);
-    background-repeat: no-repeat;
-    height: 36px;
-    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
     margin: auto;
-    margin-top: 45px;
 }
 .currency-page{
-    background: url(./photos/curency-page-icn.svg);
-    background-repeat: no-repeat;
-    height: 36px;
-    width: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
     margin: auto;
-    margin-top: 45px;
 }
 .language-change-btn{
     background: url(./photos/english-icn.svg);
@@ -462,10 +463,18 @@ h4{
     font-weight: 500;
     letter-spacing: 0.2px;
 }
+.header-part-1>a:hover{
+    background: linear-gradient(92deg, #FFF -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
+    border-left: 6px solid white;
+}
 .day-mode *, 
 .day-mode span,
 .day-mode #advert,
 .day-mode #higlights-header
 .day-mode h4{
     color:#000000;
+}
+.day-mode .header-part-1>a:hover{
+    border-left: 6px solid black;
+    background: linear-gradient(92deg, #000 -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
 }
