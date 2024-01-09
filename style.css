@@ -478,3 +478,35 @@ h4{
     border-left: 6px solid black;
     background: linear-gradient(92deg, #000 -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
 }
+@media screen and (max-width: 1200px) {
+    .grid-container{
+        display:inherit;
+    }
+    .header{
+        display: none;
+    }
+    .today{
+        background: none;
+    }
+    .today-head{
+        display: none;
+    }
+    .advertising{
+        display: none;
+    }
+    .highlights{
+        height: auto;
+        grid-template-columns: auto auto;
+        background: none;
+    }
+    .humidity{
+        height: auto;
+    }
+    #higlights-header{
+        display: none;
+    }
+    .forecast-tag{
+        position: static;
+        padding-inline: 24px;
+    }
+}
