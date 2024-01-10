@@ -81,7 +81,8 @@ body{
     margin: auto;
     cursor: pointer;
 }
-.day-night-btn{
+.day-night-btn,
+.day-night-btn1{
     width: 84px;
     height: 38px;
     background: #FFFFFF4D;
@@ -109,8 +110,8 @@ body{
     border-radius: 281px;
     background: radial-gradient(50% 20% at 10% 30%, rgba(233,78,119,0.70) 0%,rgba(233,78,119,0.00) 100%);
 }
-
-.day-night-btn.active{
+.day-night-btn.active,
+.day-night-btn1.active{
     background: url(./photos/day-theme-icn.svg);
     background-repeat: no-repeat;
     
@@ -132,7 +133,6 @@ body{
     padding-bottom: 58px;
 }
 .today-img-div p{
-    color:#FFFFFFB2;
     font-size: 18px;
     font-weight: 400;
 }
@@ -207,7 +207,7 @@ a{
     height: 460px;
     display: grid;
     justify-content: center;
-    grid-template-columns: 260px 260px 260px;
+    grid-template-columns: auto auto auto;
     gap: 20px;
     border-radius: 34px;
     background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
@@ -232,6 +232,7 @@ a{
     justify-content: center;
 }
 p{
+    color: #FFF;
     margin: 0;
 }
 .uv-index p,
@@ -241,6 +242,7 @@ p{
     font-weight: 400;
     letter-spacing: 0.54px;
     padding-top: 25px;
+    padding-inline: 20px;
 }
 .uv{
     display: flex;
@@ -248,7 +250,7 @@ p{
     gap: 2px;
     position: absolute;
     bottom: 20px;
-    left: 40%;
+    left: 35%;
     color: #FFF;
     font-size: 40px;
     letter-spacing: 0.4px;
@@ -268,13 +270,6 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-.sunrise p{
-    text-align: start;
-    padding-left: 20px;
-}
-.uv-index p{
-    padding-left: 20px;
 }
 .sunrise-hours{
     display: flex;
@@ -376,7 +371,6 @@ h3{
     align-items: center;
 }
 .amindi h4{
-    color: #FFF;
     font-size: 30px;
     font-weight: 400;
     letter-spacing: 0.9px;
@@ -390,6 +384,7 @@ h3{
     display: grid;
     gap: 25px;
     overflow-y: scroll;
+    overflow-x: clip;
     height: 250px;
 }
 .forecast-popup{
@@ -484,6 +479,12 @@ h4{
 #mobile-after-img{
     display: none;
 }
+.header-mobile{
+    display: none;
+}
+.clocks_weather{
+    display: none;
+}
 @media screen and (max-width: 1495px) {
     .grid-container{
         display:inherit;
@@ -493,6 +494,7 @@ h4{
     }
     .today{
         background: none;
+        height: 185px;
     }
     .today-head{
         display: none;
@@ -579,17 +581,18 @@ h4{
         display: grid;
         gap: 13px;
         justify-items: center;
+        padding: 0px;
     }
     #mobile-after-img{
         display: inherit;
         font-size: 40px;
         font-weight: 300;
         letter-spacing: 0.4px;
-        color: #FFF;
     }
     .today-img-mobile{
         display: flex;
         align-items: center;
+        gap: 5px;
     }
     .today-img-mobile img{
         width: 48px;
@@ -605,5 +608,53 @@ h4{
     .today-temp p{
         font-size: 14px;
         width: 168px;
+    }
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 21px;
+        padding-bottom: 13px;
+    }
+    .mobile-search-btn,
+    .settings-mobile-btn{
+        background-repeat: no-repeat;
+        height: 26px;
+        width: 26px;
+        border: transparent;
+        cursor: pointer;
+    }
+    .settings-mobile-btn{
+        background: url(./photos/mobile-menu.svg);
+    }
+    .mobile-search-btn{
+        background: url(./photos/mobile-search-icn.svg);
+    }
+    .day-night-btn,
+    .day-night-btn1{
+        margin: 0px;
+    }
+    .header-mobile-part-2{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .forecast{
+        margin: auto;
+    }
+    .clocks_weather {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 378px;
+        height: 121px;
+        background: rgba(0, 0, 0, 0.30);
+        border-radius: 18px;
+        margin: auto;
+        margin-top: 32px;
+        margin-bottom: 10px;
+    }
+    .clocks_weather div {
+        width: 50px;
     }
 }
