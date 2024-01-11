@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    display: grid;
+    align-content: space-between;
+    width: 121px;
+    border-radius: 34px;
+    background: radial-gradient(344.65% 167.74% at 0% 0%, rgba(0, 0, 0, 0.39) 0%, rgba(0, 0, 0, 0.00) 100%);
+    height: 1030px;
+    backdrop-filter: blur(14px);
+    text-align: center;
+}
+.header-part-1{
+    display: grid;
+    gap: 45px;
+}
+.header-part-2{
+    display: grid;
+    justify-items: center;
+    gap: 20px;
+}
+.header-part-1 span{
+    margin-top:103px;
+    border-bottom: 1px solid #FFFFFF4D;
+    color: #FFFFFF99;
+    padding-bottom: 11px;
+}
+.header-part-1>a:hover{
+    background: linear-gradient(92deg, #FFF -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
+    border-left: 6px solid white;
+}
+body{
+    margin: 25px;
+    background: radial-gradient(344.65% 167.74% at 0% 0%, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0.00) 100%);
+}
+.main-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
+    margin: auto;
+}
+.zodiac-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
+    margin: auto;
+}
+.mobile-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
+    margin: auto;
+}
+.currency-page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 121px;
+    height: 72px;
+    margin: auto;
+}
+.language-change-btn{
+    background: url(../photos/english-icn.svg);
+    background-repeat: no-repeat;
+    height: 36px;
+    width: 36px;
+    border: transparent;
+    margin: auto;
+    cursor: pointer;
+}
+.day-night-btn,
+.day-night-btn1{
+    width: 84px;
+    height: 38px;
+    background: #FFFFFF4D;
+    border: transparent;
+    border-radius: 36px;
+    margin: auto;
+    margin-top: 46px;
+    margin-bottom: 47px;
+    background: url(../photos/night-theme-icn.svg);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: background 0.22s ease;
+}
+.day-night-btn.active,
+.day-night-btn1.active{
+    background: url(../photos/day-theme-icn.svg);
+    background-repeat: no-repeat;
+    
+}
+.day-night-btn,
+.day-night-btn1{
+     margin: 0px;
+}
+.header-mobile-part-2{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.settings-btn{
+    background: url(../photos/setting-icn.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 32px;
+    border: transparent;
+    margin: auto;
+    margin-bottom: 45px;
+    cursor: pointer;
+}
+.day-mode {
+    border-radius: 281px;
+    background: radial-gradient(50% 20% at 10% 30%, rgba(233,78,119,0.70) 0%,rgba(233,78,119,0.00) 100%);
+}
+.day-mode .header-part-1>a:hover{
+    border-left: 6px solid black;
+    background: linear-gradient(92deg, #000 -277.19%, rgba(255, 255, 255, 0.00) 98.79%);
+}
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+  .grid-container{
+    display: grid;
+    grid-template-columns: 121px auto;
+  }
+  .grid p{
+    background: linear-gradient(180deg, #72A4EA 0%, #FFF 110.05%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 300;
+    letter-spacing: 0.6px;
+    width: 100vh;
+    margin: 0px;
+    margin-top: 86px;
+  }
+  .grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .horoskopi{
+    gap: 50px 70px;
+    margin-top: 105px;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+  }
+  .horoskopi>div{
+    display: grid;
+    justify-items: center;
+    align-items: end;
+    gap: 38px;
+  }
+  .horoskopi a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 0.66px;
+  }
+  .day-mode a {
+    color: #000000;
+}
+.day-mode p{
+    background: linear-gradient(180deg, #2E386B 0%, #A7A7A7 110.05%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.header-mobile{
+    display: none;
+}
+.mobile-search-btn,
+.settings-mobile-btn{
+    background-repeat: no-repeat;
+    height: 26px;
+    width: 26px;
+    border: transparent;
+    cursor: pointer;
+}
+.settings-mobile-btn{
+    background: url(../photos/mobile-menu.svg);
+}
+.mobile-search-btn{
+    background: url(../photos/mobile-search-icn.svg);
+}
+@media screen and (max-width: 1200px) {
+    .header-mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 21px;
+        padding-bottom: 13px;
+    }
+    .header{
+        display: none;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .horoskopi{
+        grid-template-columns: auto auto;
+    }
+    .grid p{
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        width: 330px;
+    }
+}
