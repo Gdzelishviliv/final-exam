@@ -39,10 +39,10 @@
             <div class="today-img-div">
                 <div class="today-img-mobile">
                     <img src="./images/Sunny.svg" alt="weather">
-                    <span id="mobile-after-img">Tbilisi</span>
+                    <span id="mobile-after-img"></span>
                 </div>
                 <div class="today-temp">
-                    <h2>+18°</h2>
+                    <h2 id="today-temp"></h2>
                     <p>
                         sunny, clear skies,
                         swirling winds
@@ -123,11 +123,11 @@
                 <div class="sunrise-hours">
                     <div>
                         <span id="sunrise-yellow">Sunrise</span>
-                        <span>5:30 AM</span>
+                        <span id="sunrise"></span>
                     </div>
                     <div>
                         <span id="sunset-yellow">Sunset</span>
-                        <span>6:40 AM</span>
+                        <span id="sunset"></span>
                     </div>
                 </div>
             </div>
@@ -135,20 +135,20 @@
                 <div>
                     <span id="name-undermoon">Humidity</span>
                     <div class="num-of-humidity">
-                        <h3>30</h3>
+                        <h3 id="humidity">30</h3>
                         <span id="prcnt">%</span>
                     </div>
                 </div>
                 <div class="humidity-prt2">
                     <img src="./photos/humidity-icn.svg" alt="">
-                    <p id="paragraph-form-highlights">The dew point is 17° right now</p>
+                    <p id="paragraph-form-highlights">The dew point is <b id="dew"></b> right now</p>
                 </div>
             </div>
             <div  class="humidity">
                 <div>
                     <span id="name-undermoon">Visibility</span>
                     <div class="num-of-humidity">
-                        <h3>02</h3>
+                        <h3 id="visibility">02</h3>
                         <span id="prcnt">km</span>
                     </div>
                 </div>
@@ -162,7 +162,7 @@
                     <span id="name-undermoon">Feels like</span>
                     <div class="num-of-humidity">
                         <img src="./photos/temp-icn.svg" alt="">
-                        <h3>24°</h3>
+                        <h3 id="feels"></h3>
                         <span id="prcnt"></span>
                     </div>
                 </div>
